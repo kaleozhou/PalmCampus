@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_background" >
+    <include layout="@layout/title" />
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp" >
+        <GridView
+	        android:id="@+id/menu_personal_GV"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:listSelector="@drawable/menu_gridview_background"
+	        android:numColumns="3"
+	        android:verticalSpacing="40dp"
+	       
+	        
+	         />
+    </LinearLayout>
+</LinearLayout>

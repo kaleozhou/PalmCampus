@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/home_RG"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_tab_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/home_personal_RB"
+                style="@style/home_tab_radio"
+                android:checked="true"
+                android:drawableTop="@drawable/home_tab_personal"
+                android:text="个人空间" />
+
+            <RadioButton
+                android:id="@+id/home_letter_RB"
+                style="@style/home_tab_radio"
+                android:drawableTop="@drawable/home_tab_letter"
+                android:text="校园邮箱" />
+
+            <RadioButton
+                android:id="@+id/home_config_RB"
+                style="@style/home_tab_radio"
+                android:drawableTop="@drawable/home_tab_config"
+                android:text="个人设置" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

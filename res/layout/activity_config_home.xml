@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#297DC6" >
+
+        <ImageView
+            android:id="@+id/title_logo_IV"
+            style="@style/title_logo"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@drawable/ic_launcher" />
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="个人设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <!--  <Button
+        android:id="@+id/config_changepwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改密码" /> -->
+
+</LinearLayout>

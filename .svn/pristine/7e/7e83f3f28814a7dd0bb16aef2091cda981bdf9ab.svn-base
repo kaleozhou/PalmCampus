@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+	<RelativeLayout
+	    android:id="@+id/titlebar"
+		android:background="@drawable/title_background"
+		android:layout_width="fill_parent"
+		android:layout_height="40dip"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:layout_alignParentTop="true" >
+	    <ImageView
+			android:id="@+id/title_logo_IV"
+			android:src="@drawable/ic_launcher"
+			android:layout_width="30dip"
+			android:layout_height="30dip"
+			style="@style/title_logo" />
+	    <TextView
+			android:id="@+id/title_Text_TV"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/title_logo_IV"
+			android:text="账号登陆"
+			style="@style/title_text" />
+	     <Button android:id="@+id/title_setting_Btn"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:text="退出"
+			style="@style/title_button" />
+	</RelativeLayout>
+</LinearLayout>

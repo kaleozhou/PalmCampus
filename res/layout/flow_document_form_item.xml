@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/list_item_background">
+        <ImageView
+            android:id="@+id/flow_form_item_icon_IV"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dip"
+        	android:src="@drawable/flow_item_icon" />
+        <TextView
+            android:id="@+id/flow_form_item_title_TV"
+            android:layout_toRightOf="@id/flow_form_item_icon_IV"
+			android:layout_width="66dip"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+	  		android:layout_marginLeft="8dip"
+			android:textColor="#ffffffff"
+			android:textSize="16dip"
+			android:text="事项名" />
+        <EditText
+            android:id="@+id/flow_form_item_content_ET"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:layout_toRightOf="@id/flow_form_item_title_TV"
+			android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10.0dip" />
+        <Button
+            android:id="@+id/flow_form_item_into_Btn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dip"
+	        android:layout_toRightOf="@id/flow_form_item_title_TV"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10.0dip" />
+    </RelativeLayout>
+</LinearLayout>

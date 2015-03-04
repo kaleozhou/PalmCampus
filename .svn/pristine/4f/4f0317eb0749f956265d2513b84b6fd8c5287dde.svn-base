@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_detail_layout"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/list_background">
+	<include layout="@layout/title"/>
+    <LinearLayout
+		android:id="@+id/flow_form_root_LL"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="#2fffffff">
+	    <!--  
+        <TextView
+            android:id="@+id/flow_form_title_TV"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"
+			android:layout_gravity="center_horizontal"
+			android:text="表单标题"
+			android:textColor="#ff3f3f3f"
+			android:textSize="20.0dip"/>-->
+        
+        <ListView android:id="@+id/view_detail_form_LV"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="false"
+	        android:cacheColorHint="@null"
+	        android:background="#0000aaff" />
+        <ScrollView
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:fillViewport="true" >
+            <LinearLayout
+                android:id="@+id/view_detail_root_LL"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+                
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+     
+</LinearLayout>

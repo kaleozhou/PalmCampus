@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="fill_parent" 
+    	android:layout_height="50dip"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/list_item_background">
+        <ImageView
+            android:id="@+id/flow_list_item_icon_IV"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+            android:scaleType="fitStart"
+        	android:src="@drawable/mailing_avatar" />
+        <TextView
+            android:id="@+id/flow_list_item_title_TV"
+           
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:textColor="#ffffff"
+			android:layout_marginLeft="120dp"
+			android:textSize="16dip"
+			android:text="姓名" />
+        <ImageView
+            android:id="@+id/flow_list_item_into_IV"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10.0dip"
+	        android:src="@drawable/into_icon" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/list_background">
+    <include layout="@layout/title" />
+    <TextView android:id="@+id/tv_hasdata"
+     android:layout_width="fill_parent"
+     android:layout_height="30dp"
+     android:gravity="center_horizontal"
+     android:text="暂时没有数据"
+     android:visibility="gone"
+        />
+    <ListView android:id="@+id/view_list_LV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/divider_group"
+        android:background="#0000aaff"
+         />
+</LinearLayout>

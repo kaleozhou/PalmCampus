@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="fill_parent" 
+    	android:layout_height="50dip"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/list_item_background">
+        <ImageView
+            android:id="@+id/flow_list_item_icon_IV2"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+        	android:layout_marginLeft="20dip"
+        	android:layout_marginTop="5dip"
+        	android:layout_marginRight="5dip"
+        	android:layout_marginBottom="5dip"
+        	android:src="@drawable/list_item_icon" />
+        <TextView
+            android:id="@+id/flow_list_item_title_TV2"
+            android:layout_toRightOf="@id/flow_list_item_icon_IV2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+	  		android:layout_marginLeft="10dip"
+	  		android:layout_marginTop="5dip"
+	  		android:layout_marginBottom="5dip"
+			android:textColor="#ffffffff"
+			android:textSize="16dip"
+			android:text="标题" />
+         <EditText
+            android:id="@+id/flow_list_item_content_TV"
+            android:layout_toRightOf="@id/flow_list_item_icon_IV"
+            android:inputType="text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+	  		android:layout_marginLeft="60dip"
+	  		android:layout_marginTop="5dip"
+	  		android:layout_marginBottom="5dip"
+			android:textColor="#ffffffff"
+			android:textSize="16dip"
+			android:ems="10" />
+    </RelativeLayout>
+</LinearLayout>

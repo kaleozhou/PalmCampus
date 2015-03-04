@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bj">
+	 <!-- 上部  -->
+	 <LinearLayout 
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_weight="1"
+	     >
+	 </LinearLayout>
+	 <!-- 上部  -->
+	 
+	 <!-- 中部  --> 
+	 <LinearLayout 
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content" 
+	     android:layout_weight="0.5"
+	     android:orientation="horizontal">
+     
+	     <!-- 中部——左 -->
+
+	     <LinearLayout
+	         android:layout_width="wrap_content"
+	         android:layout_height="fill_parent"
+	         android:layout_weight="4" >
+
+	     </LinearLayout>
+	     <!-- 中部——左 -->	     
+	     <!-- 中部——中 -->
+	     <LinearLayout 
+	     	android:layout_width="wrap_content"
+	     	android:layout_height="fill_parent"
+	     	android:layout_weight="5"
+	     	android:gravity="center"
+	     	android:orientation="vertical">
+	    	<!-- 用户名 -->
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.5"
+	            android:gravity="center"
+	            android:orientation="horizontal" >
+
+	     			<TextView 
+	         		android:layout_width="wrap_content"
+	         		android:layout_height="wrap_content"
+	         		android:layout_weight="0.5"
+	         		android:text="用户名："
+	         		android:textSize="20sp"
+	         		android:textColor="@color/black"/>
+
+	     			<EditText
+	     			    android:id="@+id/mian_edt_username"
+	     			    android:layout_width="wrap_content"
+	     			    android:singleLine="true"
+	     			    android:layout_height="wrap_content"
+	     			    android:layout_weight="5" />
+
+	      	</LinearLayout>
+	     	<!-- 用户名 -->
+	      	<!-- 密码 -->
+	      	<LinearLayout 
+	     		android:layout_width="fill_parent"
+	     		android:gravity="center"
+	     		android:layout_height="wrap_content"		
+	     		android:layout_weight="0.5"
+	     		android:orientation="horizontal">
+	     			
+	     			<TextView 
+	         		android:layout_width="wrap_content"
+	         		android:layout_height="wrap_content"
+	         		android:layout_weight="0.5"
+	         		android:singleLine="true"
+	         		android:text="密    码："
+	         		android:textColor="@color/black"
+	         		android:textSize="20sp"/>
+
+	     			<EditText
+	     			    android:id="@+id/mian_edt_password"
+	     			    android:layout_width="wrap_content"
+	     			    android:layout_height="wrap_content"
+	     			    android:layout_weight="5" 
+	     			    android:inputType="textPassword"/>
+	     			
+	     	</LinearLayout>
+	      	<!-- 密码 -->
+	      	<!-- 登录按钮 -->
+	      	<LinearLayout 
+	     		android:layout_width="fill_parent"
+	     		android:layout_height="wrap_content"
+	     		android:layout_weight="0.5"
+	     		android:gravity="center"
+	     		android:orientation="vertical">
+	     			<LinearLayout 
+	     			    android:layout_width="fill_parent"
+	     			    android:layout_height="wrap_content"
+	     			    android:layout_weight="0.5"
+	     			    android:orientation="horizontal">
+
+	     			    <CheckBox
+	     			        android:id="@+id/mian_checkbox_rempwd"
+	     			        android:layout_width="wrap_content"
+	     			        android:layout_height="wrap_content"
+	     			        android:layout_weight="1"
+	     			        android:gravity="center_vertical"
+	     			        android:text="记住密码"
+	     			        android:textColor="@color/black"
+	     			        android:checked="true"
+	     			        android:textSize="18sp" />
+
+	     			      <CheckBox
+	     			          android:id="@+id/mian_checkbox_autologin"
+	     			          android:layout_width="wrap_content"
+	     			          android:layout_height="wrap_content"
+	     			          android:layout_weight="1"
+	     			          android:gravity="center_vertical"
+	     			          android:text="自动登陆"
+	     			          android:textColor="@color/black"
+	     			          android:checked="true"
+	     			          android:textSize="18sp" />
+	     			    
+	     			</LinearLayout>
+	     			
+	     			<Button
+	     			    android:id="@+id/mian_button_login"
+	     			    android:layout_width="fill_parent"
+	     			    android:layout_height="wrap_content"
+	     			    android:layout_weight="0.5"
+	     			    android:background="@color/green"
+	     			    android:text="登   录"
+	     			    android:textSize="20sp" />
+
+	     	</LinearLayout>
+	      	<!-- 登录按钮 -->
+	     </LinearLayout>
+	     <!-- 中部——中 -->
+	      
+	     <!-- 中部——右 -->
+
+	     <LinearLayout
+	         android:layout_width="wrap_content"
+	         android:layout_height="fill_parent"
+	         android:layout_weight="4" >
+
+	    </LinearLayout>
+	    <!-- 中部——右 -->   
+	 </LinearLayout>
+	 <!-- 中部  -->
+	 <!-- 下部 -->
+	 <LinearLayout 
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_weight="2">
+	 </LinearLayout>
+
+</LinearLayout>
